@@ -1,7 +1,5 @@
 package com.example.springhibernateconnection_1.entity;
 
-import com.sun.javafx.beans.IDProperty;
-
 import javax.persistence.*;
 
 /**

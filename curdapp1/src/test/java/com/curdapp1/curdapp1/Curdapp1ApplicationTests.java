@@ -1,0 +1,13 @@
+package com.curdapp1.curdapp1;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
+
+@SpringBootTest
+class Curdapp1ApplicationTests {
+
+    @Test
+    void contextLoads() {
+    }
+
+}
