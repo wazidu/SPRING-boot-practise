@@ -37,6 +37,7 @@ public class ProductController {
     @GetMapping("/productByName/{name}")
     public Product findProductByName(@PathVariable String name)
     {
+        System.out.println("for find byname");
         return service.getProductByName(name);
     }
 
