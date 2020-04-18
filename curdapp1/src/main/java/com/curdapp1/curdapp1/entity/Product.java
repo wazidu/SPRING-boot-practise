@@ -15,7 +15,6 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "PRODUCT_TBL")
 public class Product {
-
     @Id
     @GeneratedValue
     public int id;
