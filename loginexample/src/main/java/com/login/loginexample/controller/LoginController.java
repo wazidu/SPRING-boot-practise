@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 public class LoginController {
 
 
-    @GetMapping("/welcome")
+    @RequestMapping("/welcome")
     public String getwelcome(Model model)
     {
         return  "welcome";
