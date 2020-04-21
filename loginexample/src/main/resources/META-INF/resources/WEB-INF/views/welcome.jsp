@@ -15,7 +15,7 @@
 <body>
 <div role="navigation">
     <div class="navbar navbar-inverse">
-        <a href="/welcome" class="navbar-brand">Tecno-Tab</a>
+        <a href="/welcome" class="navbar-brand">Login-Murad</a>
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
                 <li><a href="/login">Login</a></li>
