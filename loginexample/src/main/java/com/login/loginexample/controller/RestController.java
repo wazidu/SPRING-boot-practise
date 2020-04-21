@@ -16,6 +16,7 @@ public class RestController {
     {
         return "hello";
     }
+
     @GetMapping("/save-user")
     public String saveUser(@RequestParam String firstname,@RequestParam String lastname,@RequestParam int age,@RequestParam String password)
     {
