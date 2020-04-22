@@ -17,7 +17,7 @@ public class ProductService {
 
     public void save(Product product)
     {
-        repo.save(product);
+         repo.save(product);
     }
 
     public List<Product> listAll()
