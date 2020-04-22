@@ -13,7 +13,7 @@ public class LoginController {
     @RequestMapping("/welcome")
     public String getwelcome(Model model)
     {
-        return  "welcome";
+        return  "home";
     }
 
 
