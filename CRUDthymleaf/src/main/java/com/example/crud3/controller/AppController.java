@@ -24,6 +24,8 @@ public String getHome(Model model)
     List<Product> list;
     list=(List<Product>) service.listAll();
     model.addAttribute("plist",list);
+
+    System.out.println("displaying all products");
     return "index";
 
 }
