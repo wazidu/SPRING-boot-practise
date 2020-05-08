@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>LOgin page</title>
+</head>
+<body>
+     <form th:action="@{/login}"  th:object="${loginForm}" method="post">
+         <fieldset>
+             <legend style="color: darkviolet">Login Form</legend>
+             <p th:if="${invalidcredentials}" th:class="error">User & Password Wrong</p><br>
+             <label for="username">User Name</label><br>
+             <input type="text" id="username" name="username" autofocus="autofocus"/><br>
+
+             <label for="password">Password</label><br>
+             <input type="text" id="password" name="password" /><br>
+             <input type="submit" value="Login">
+
+
+         </fieldset>
+     </form>
+</body>
+</html>
