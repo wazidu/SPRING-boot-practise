@@ -1,67 +1,73 @@
 <!DOCTYPE html>
-<div lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>index</title>
+<!--<div lang="en">-->
+<!--<head>-->
+    <!--<meta charset="UTF-8">-->
+    <!--<title>index</title>-->
 
-    <!-- Bootstrap core CSS -->
-    <link href="/css/bootstrap.min.css" rel="stylesheet" />
+    <!--&lt;!&ndash; Bootstrap core CSS &ndash;&gt;-->
+    <!--<link href="/css/bootstrap.min.css" rel="stylesheet" />-->
 
-    <link href="/css/non-responsive.css" rel="stylesheet" />
+    <!--<link href="/css/non-responsive.css" rel="stylesheet" />-->
 
-    <!-- Custom styles for this template -->
-    <link href="/css/style.css" rel="stylesheet" />
+    <!--&lt;!&ndash; Custom styles for this template &ndash;&gt;-->
+    <!--<link href="/css/style.css" rel="stylesheet" />-->
 
-    <link rel="icon" href="/image/apple-touch-icon.png" />
-
-
-</head>
-<div>
-
-<div class="page-top"
-     style="width: 100%; height: 20px; background-color: #87D8EF;"></div>
-<!--<div class="container">-->
+    <!--<link rel="icon" href="/image/apple-touch-icon.png" />-->
 
 
-    <nav class="navbar navbar-default navbar-inverse">
-        <div class="container-fluid">
-            <div class="navbar-header">
+<!--</head>-->
+<!--replacing this by commom header-->
+<html lang="en" xmlns:th="http://www.w3.org/1000/xhtml">
+<head th:replace="common/header :: common-header" />
+<body>
 
-                <a class="navbar-brand" href="#">Murad's Book Store</a>
-            </div>
-            <div id="navbar" >
-                <ul class="nav navbar-nav navbar-left">
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle"
-                           data-toggle="dropdown" role="button" aria-haspopup="true"
-                           aria-expanded="false">BOOKS <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Browse the bookshelf</a></li>
-                            <li><a href="#">Store hours &#38; Directions</a></li>
-                            <li><a href="#">FAQ</a></li>
+<!--replacing the navbar by common navbar-->
+<div th:replace="common/header :: navbar" />
 
-                        </ul></li>
-                    <form class="navbar-form">
-                        <div class="form-group">
-                            <input type="text" name="keyword" class="form-control" placeholder="Book title" />
-                        </div>
-                        <button type="submit" class="btn btn-default">Search</button>
-                    </form>
-                </ul>
-                <!--<form class="navbar-form form-inline">-->
-                    <!--&lt;!&ndash;<div class="form-group">&ndash;&gt;-->
-                        <!--<input type="text" name="keyword" class="form-control" placeholder="Book title" />-->
-                    <!--&lt;!&ndash;</div>&ndash;&gt;-->
-                    <!--<button type="submit" class="btn btn-default">Search</button>-->
-                <!--</form>-->
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#">SHOPPING CART</a></li>
-                    <li><a href="#">MY ACCOUNT</a></li>
-                    <LI><a href="#">LOGOUT</a></LI>
-                </ul>
-            </div><!--/.nav-collapse -->
-        </div><!--/.container-fluid -->
-    </nav>
+<!--<div class="page-top"-->
+     <!--style="width: 100%; height: 20px; background-color: #87D8EF;"></div>-->
+<!--&lt;!&ndash;<div class="container">&ndash;&gt;-->
+
+
+    <!--<nav class="navbar navbar-default navbar-inverse">-->
+        <!--<div class="container-fluid">-->
+            <!--<div class="navbar-header">-->
+
+                <!--<a class="navbar-brand" href="#">Murad's Book Store</a>-->
+            <!--</div>-->
+            <!--<div id="navbar" >-->
+                <!--<ul class="nav navbar-nav navbar-left">-->
+                    <!--<li class="dropdown">-->
+                        <!--<a href="#" class="dropdown-toggle"-->
+                           <!--data-toggle="dropdown" role="button" aria-haspopup="true"-->
+                           <!--aria-expanded="false">BOOKS <span class="caret"></span></a>-->
+                        <!--<ul class="dropdown-menu">-->
+                            <!--<li><a href="#">Browse the bookshelf</a></li>-->
+                            <!--<li><a href="#">Store hours &#38; Directions</a></li>-->
+                            <!--<li><a href="#">FAQ</a></li>-->
+
+                        <!--</ul></li>-->
+                    <!--<form class="navbar-form">-->
+                        <!--<div class="form-group">-->
+                            <!--<input type="text" name="keyword" class="form-control" placeholder="Book title" />-->
+                        <!--</div>-->
+                        <!--<button type="submit" class="btn btn-default">Search</button>-->
+                    <!--</form>-->
+                <!--</ul>-->
+                <!--&lt;!&ndash;<form class="navbar-form form-inline">&ndash;&gt;-->
+                    <!--&lt;!&ndash;&lt;!&ndash;<div class="form-group">&ndash;&gt;&ndash;&gt;-->
+                        <!--&lt;!&ndash;<input type="text" name="keyword" class="form-control" placeholder="Book title" />&ndash;&gt;-->
+                    <!--&lt;!&ndash;&lt;!&ndash;</div>&ndash;&gt;&ndash;&gt;-->
+                    <!--&lt;!&ndash;<button type="submit" class="btn btn-default">Search</button>&ndash;&gt;-->
+                <!--&lt;!&ndash;</form>&ndash;&gt;-->
+                <!--<ul class="nav navbar-nav navbar-right">-->
+                    <!--<li><a href="#">SHOPPING CART</a></li>-->
+                    <!--<li><a href="#">MY ACCOUNT</a></li>-->
+                    <!--<LI><a href="#">LOGOUT</a></LI>-->
+                <!--</ul>-->
+            <!--</div>&lt;!&ndash;/.nav-collapse &ndash;&gt;-->
+        <!--</div>&lt;!&ndash;/.container-fluid &ndash;&gt;-->
+    <!--</nav>-->
 
 <!--</div> &lt;!&ndash; /container &ndash;&gt;-->
 <div class="container">
@@ -256,7 +262,11 @@
 <!-- Bootstrap core JavaScript
     ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="/js/bootstrap.min.js"></script>
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>-->
+<!--<script src="/js/bootstrap.min.js"></script>-->
+
+<!--replacing the common script by the below-->
+<div th:replace="common/header :: body-bottom-scripts" />
+
 </body>
 </html>
