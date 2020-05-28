@@ -36,3 +36,17 @@ h2{
     background-color: #231F20;
     padding: 5px 22px;
 }
+.section-headline {
+    font-family: 'Times New Roman', Times, serif;
+    font-size:24px;
+    color: #fff;
+    margin: auto;
+    text-align: center;
+    margin-top: 125px;
+}
+
+.section-headline span {
+    background-color: #231F20;
+    padding: 5px 30px;
+
+}
