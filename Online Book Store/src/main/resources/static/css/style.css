@@ -42,11 +42,13 @@ h2{
     color: #fff;
     margin: auto;
     text-align: center;
+    /*margin-top: 125px;*/
     margin-top: 125px;
+
 }
 
 .section-headline span {
     background-color: #231F20;
-    padding: 5px 30px;
+    padding: 5px 22px;
 
 }
